@@ -8,6 +8,9 @@
 	<Grid>
 		<Image x:Name="logoImage" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,20,0,0" Width="200" Height="200"/>
 
+		<TextBlock Text="Bienvenue sur la RES" FontSize="28" FontWeight="Bold" Margin="0,200,0,0"
+							  HorizontalAlignment="Center" />
+
 		<StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
 			<Button Content="Créer mon entreprise" Width="200" Margin="0,20"/>
 			<Button Content="Se connecter" Width="200" Margin="0,20" />
