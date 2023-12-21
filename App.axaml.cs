@@ -1,8 +1,10 @@
 using Avalonia;
 using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Markup.Xaml;
+using RESAPPLI_MVVM.ViewModels;
+using RESAPPLI_MVVM.Views;
 
-namespace RESAPPLI
+namespace RESAPPLI_MVVM
 {
     public partial class App : Application
     {
@@ -15,7 +17,10 @@ namespace RESAPPLI
         {
             if (ApplicationLifetime is IClassicDesktopStyleApplicationLifetime desktop)
             {
-                desktop.MainWindow = new MainWindow();
+                desktop.MainWindow = new MainWindow
+                {
+                    DataContext = new MainWindowViewModel(),
+                };
             }
 
             base.OnFrameworkInitializationCompleted();

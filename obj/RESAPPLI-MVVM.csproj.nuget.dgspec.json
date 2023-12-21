@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\h.jacquel\\source\\repos\\RESAPPLI-2\\RESAPPLI-2\\RESAPPLI-2.csproj": {}
+    "C:\\Users\\h.jacquel\\source\\repos\\RESAPPLI-MVVM\\RESAPPLI-MVVM\\RESAPPLI-MVVM.csproj": {}
   },
   "projects": {
-    "C:\\Users\\h.jacquel\\source\\repos\\RESAPPLI-2\\RESAPPLI-2\\RESAPPLI-2.csproj": {
+    "C:\\Users\\h.jacquel\\source\\repos\\RESAPPLI-MVVM\\RESAPPLI-MVVM\\RESAPPLI-MVVM.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\h.jacquel\\source\\repos\\RESAPPLI-2\\RESAPPLI-2\\RESAPPLI-2.csproj",
-        "projectName": "RESAPPLI-2",
-        "projectPath": "C:\\Users\\h.jacquel\\source\\repos\\RESAPPLI-2\\RESAPPLI-2\\RESAPPLI-2.csproj",
+        "projectUniqueName": "C:\\Users\\h.jacquel\\source\\repos\\RESAPPLI-MVVM\\RESAPPLI-MVVM\\RESAPPLI-MVVM.csproj",
+        "projectName": "RESAPPLI-MVVM",
+        "projectPath": "C:\\Users\\h.jacquel\\source\\repos\\RESAPPLI-MVVM\\RESAPPLI-MVVM\\RESAPPLI-MVVM.csproj",
         "packagesPath": "C:\\Users\\h.jacquel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\h.jacquel\\source\\repos\\RESAPPLI-2\\RESAPPLI-2\\obj\\",
+        "outputPath": "C:\\Users\\h.jacquel\\source\\repos\\RESAPPLI-MVVM\\RESAPPLI-MVVM\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -58,6 +58,10 @@
               "version": "[11.0.6, )"
             },
             "Avalonia.Fonts.Inter": {
+              "target": "Package",
+              "version": "[11.0.6, )"
+            },
+            "Avalonia.ReactiveUI": {
               "target": "Package",
               "version": "[11.0.6, )"
             },
