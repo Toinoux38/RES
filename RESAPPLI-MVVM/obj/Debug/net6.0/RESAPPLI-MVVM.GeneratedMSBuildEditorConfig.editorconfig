@@ -28,3 +28,6 @@ build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
 [C:/Users/h.jacquel/source/repos/RESAPPLI-MVVM/RESAPPLI-MVVM/Views/MainWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[C:/Users/h.jacquel/source/repos/RESAPPLI-MVVM/RESAPPLI-MVVM/Views/PlanningList.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml

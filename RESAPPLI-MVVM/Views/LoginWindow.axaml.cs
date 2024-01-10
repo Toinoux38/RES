@@ -3,6 +3,7 @@ using System.Linq;
 using Avalonia;
 using Avalonia.Controls;
 using Avalonia.Markup.Xaml;
+using Microsoft.EntityFrameworkCore;
 using RESAPPLI_MVVM.Data;
 
 namespace RESAPPLI_MVVM.Views;
@@ -21,7 +22,9 @@ public partial class LoginWindow : Window
 
         var db = SingletonMariadb.GetInstance();
 
-        var user = db.Utilisateurs.FirstOrDefault(u => u.Email == mail);
+        var user = db.Utilisateurs
+            .Include(u => u.Entreprise)
+            .FirstOrDefault(u => u.Email == mail);
 
 
         if (user != null) // l'utilisateur a été trouvé
@@ -29,8 +32,9 @@ public partial class LoginWindow : Window
 
             if (user.PasswordHash == password) // Matching
             {
-                // TODO : Créer la nouvelle fenetre
                 Console.WriteLine("Login Reussis");
+                PlanningList viewPlanning = new PlanningList(user);
+                viewPlanning.Show();
             }
             else // Fail
             {
