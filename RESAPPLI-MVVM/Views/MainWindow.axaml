@@ -21,7 +21,7 @@
 		<StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
 			<!-- Nommez le bouton pour pouvoir le retrouver dans le code-behind -->
 			<Button x:Name="CreateCompanyButton" Content="Créer mon entreprise" Width="200" Margin="0,20"/>
-			<Button Content="Se connecter" Width="200" Margin="0,20" />
+			<Button x:Name="SeConnectionButton" Content="Se connecter" Width="200" Margin="0,20" />
 		</StackPanel>
     </Grid>
 </Window>

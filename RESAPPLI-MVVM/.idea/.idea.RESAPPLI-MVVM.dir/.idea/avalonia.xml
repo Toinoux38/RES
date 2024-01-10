@@ -3,7 +3,10 @@
   <component name="AvaloniaProject">
     <option name="projectPerEditor">
       <map>
+        <entry key="App.axaml" value="RESAPPLI-MVVM.csproj" />
         <entry key="Views/CreateCompanyWindow.axaml" value="RESAPPLI-MVVM.csproj" />
+        <entry key="Views/LoginView.axaml" value="RESAPPLI-MVVM.csproj" />
+        <entry key="Views/LoginWindow.axaml" value="RESAPPLI-MVVM.csproj" />
         <entry key="Views/MainWindow.axaml" value="RESAPPLI-MVVM.csproj" />
       </map>
     </option>

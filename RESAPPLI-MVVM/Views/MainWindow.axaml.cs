@@ -17,6 +17,9 @@ namespace RESAPPLI_MVVM.Views
             // Trouvez le bouton "Créer mon entreprise" et abonnez-vous à son événement Click
             var createCompanyButton = this.FindControl<Button>("CreateCompanyButton");
             createCompanyButton.Click += CreateCompanyButton_Click;
+
+            var seConnecterButton = this.FindControl<Button>("SeConnectionButton");
+            seConnecterButton.Click += displayLoginPage;
         }
 
         private void CreateCompanyButton_Click(object sender, Avalonia.Interactivity.RoutedEventArgs e)
@@ -24,6 +27,12 @@ namespace RESAPPLI_MVVM.Views
             // Lorsque le bouton est cliqué, ouvrez la nouvelle fenêtre CreateCompanyWindow
             var createCompanyWindow = new CreateCompanyWindow();
             createCompanyWindow.Show();
+        }
+
+        private void displayLoginPage(object sender, Avalonia.Interactivity.RoutedEventArgs e)
+        {
+            var loginWindows = new LoginWindow();
+            loginWindows.Show();
         }
     }
 }

@@ -11,7 +11,6 @@ namespace RESAPPLI_MVVM.Views
 {
     public partial class CreateCompanyWindow : Window
     {
-        private DbContextOptionsBuilder dbContextOptionsBuilder;
 
         public CreateCompanyWindow()
         {
