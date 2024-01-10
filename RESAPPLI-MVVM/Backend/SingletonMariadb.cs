@@ -10,6 +10,8 @@ namespace RESAPPLI_MVVM.Data
         private static SingletonMariadb instance;
 
         public DbSet<Entreprise> Entreprises { get; set; }
+        public DbSet<Utilisateur> Utilisateurs { get; set; }
+
 
         private SingletonMariadb(DbContextOptions<SingletonMariadb> options) : base(options) { }
 

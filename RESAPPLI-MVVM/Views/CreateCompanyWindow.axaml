@@ -11,6 +11,13 @@
 
 		<TextBox x:Name="CompanyNameTextBox" Watermark="Nom de l'entreprise" Margin="0,0,0,10"/>
 
+		<TextBlock Text="Inscription Administrateur" FontSize="20" FontWeight="Bold" Margin="0,0,0,10"/>
+
+		<TextBox x:Name="NomAdmin" Watermark="Nom de l'Administrateur" Margin="0,0,0,10"/>	
+		<TextBox x:Name="PrenomAdmin" Watermark="Prenom de l'Administrateur" Margin="0,0,0,10"/>	
+		<TextBox x:Name="MailAdmin" Watermark="Mail de l'Administrateur" Margin="0,0,0,10"/>	
+		<TextBox x:Name="PassAdmin" Watermark="Mot de passe de l'Administrateur" PasswordChar="*" Margin="0,0,0,10"/>
+		
 
 		<!-- Autres champs requis pour l'inscription -->
 

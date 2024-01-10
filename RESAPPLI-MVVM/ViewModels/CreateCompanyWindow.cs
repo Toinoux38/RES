@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Runtime.Intrinsics.Arm;
 using Avalonia;
 using Avalonia.Controls;
 using Avalonia.Markup.Xaml;
@@ -33,9 +34,30 @@ namespace RESAPPLI_MVVM.Views
                 };
 
                 Console.WriteLine(entreprise.Nom);
+                Console.WriteLine(entreprise.ID);
                 db.Entreprises.Add(entreprise);
+
                 db.SaveChanges();
-            this.Close();
+                
+                // Ajout utilisateur
+
+
+
+                var admin = new Utilisateur{
+                    Prenom = ((TextBox)this.FindControl<TextBox>("PrenomAdmin")).Text,
+                    Nom = ((TextBox)this.FindControl<TextBox>("NomAdmin")).Text,
+                    Email = ((TextBox)this.FindControl<TextBox>("MailAdmin")).Text,
+                    PasswordHash = Encryption.Encryption.GetSHA256Hash(((TextBox)this.FindControl<TextBox>("PassAdmin")).Text),
+                    LastConnection = DateTime.Now,
+                    CreateAt = DateTime.Now,
+                    TypeCompteId = 1,
+                    EntrepriseId = entreprise.ID 
+                    };
+
+                    db.Utilisateurs.Add(admin);
+                
+                db.SaveChanges();
+                this.Close();
         }
 
         private void AnnulerButton_Click(object sender, Avalonia.Interactivity.RoutedEventArgs e)
