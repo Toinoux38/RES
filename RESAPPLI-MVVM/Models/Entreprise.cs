@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -14,6 +16,12 @@ namespace RESAPPLI_MVVM.Models
         public string Nom { get; set; }
         public DateTime DateCreation { get; set; }
 
-        // Autres propriétés...
+        public List<Planning> Plannings { get; set; }
+
+        // Relation 1 Entreprise <-> n Utilisateurs
+        public List<Utilisateur> Utilisateurs { get; set; }
+
+        // Relation 1 Entreprise <-> n CategoriesPlanning
+        public List<CategoriePlanning> CategoriesPlanning { get; set; }
     }
 }

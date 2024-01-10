@@ -35,6 +35,8 @@ public partial class LoginWindow : Window
                 Console.WriteLine("Login Reussis");
                 PlanningList viewPlanning = new PlanningList(user);
                 viewPlanning.Show();
+                this.Close();
+
             }
             else // Fail
             {

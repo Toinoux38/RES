@@ -26,17 +26,15 @@ public partial class PlanningList : Window
         current_user = user;
         current_entreprise = user.Entreprise;
        
-        Console.WriteLine("BEGIN DEBUG");
-        Console.WriteLine(user);
-        Console.WriteLine("ENTREPRISE");
-        Console.WriteLine(user.Entreprise);
-        Console.WriteLine("USER NOM");
-        Console.WriteLine(user.Nom);
-        Console.WriteLine("ENTREPRISE NOM");
-        Console.WriteLine(user.Entreprise.Nom);
-        
+        // Message de bienvenue
         string WelcomeMessage = $"Bienvenue {user.Nom} sur l'entreprise {current_entreprise.Nom}";
-        this.FindControl<TextBox>("WelcomeTXT").Text = WelcomeMessage;
+        this.FindControl<TextBlock>("WelcomeTXT").Text = WelcomeMessage;
+        
+        
+        // Affichage des plannings
+
+        DataGrid datagrid = this.Find<DataGrid>("PlanningDataGrid");
+        datagrid.ItemsSource = current_entreprise.Plannings;
 
     }
 }
