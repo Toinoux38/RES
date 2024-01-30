@@ -20,6 +20,9 @@ build_property.EnableGeneratedComInterfaceComImportInterop =
 [C:/Users/antoi/RES-APPLI-2/RESAPPLI-MVVM/App.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
+[C:/Users/antoi/RES-APPLI-2/RESAPPLI-MVVM/Themes/FluentCalendarControl.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
 [C:/Users/antoi/RES-APPLI-2/RESAPPLI-MVVM/Views/CreateCompanyWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 

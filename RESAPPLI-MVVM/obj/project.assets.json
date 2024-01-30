@@ -354,6 +354,19 @@
           }
         }
       },
+      "CalendarControl.Avalonia/11.0.6": {
+        "type": "package",
+        "dependencies": {
+          "Avalonia": "11.0.6",
+          "System.Reactive": "5.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.1/CalendarControl.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/CalendarControl.dll": {}
+        }
+      },
       "DynamicData/7.9.5": {
         "type": "package",
         "dependencies": {
@@ -2162,6 +2175,19 @@
         "lib/net6.0/Avalonia.X11.xml",
         "lib/netstandard2.0/Avalonia.X11.dll",
         "lib/netstandard2.0/Avalonia.X11.xml"
+      ]
+    },
+    "CalendarControl.Avalonia/11.0.6": {
+      "sha512": "JEywEWxTDjGrzEHvGEiNnFQthPk1xSWqnEmlDtqTwB3deptlNupmg4fJri9d1lMW5YFMh492ljrCvyuPndDK1Q==",
+      "type": "package",
+      "path": "calendarcontrol.avalonia/11.0.6",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "calendarcontrol.avalonia.11.0.6.nupkg.sha512",
+        "calendarcontrol.avalonia.nuspec",
+        "lib/netstandard2.1/CalendarControl.dll"
       ]
     },
     "DynamicData/7.9.5": {
@@ -4462,6 +4488,7 @@
       "Avalonia.Fonts.Inter >= 11.0.6",
       "Avalonia.ReactiveUI >= 11.0.6",
       "Avalonia.Themes.Fluent >= 11.0.6",
+      "CalendarControl.Avalonia >= 11.0.6",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.0",
       "Pomelo.EntityFrameworkCore.MySql >= 7.0.0"
     ]
@@ -4531,6 +4558,10 @@
             "version": "[11.0.6, )"
           },
           "Avalonia.Themes.Fluent": {
+            "target": "Package",
+            "version": "[11.0.6, )"
+          },
+          "CalendarControl.Avalonia": {
             "target": "Package",
             "version": "[11.0.6, )"
           },

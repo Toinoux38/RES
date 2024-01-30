@@ -50,4 +50,12 @@ public partial class LoginWindow : Window
         }
         
     }
+    private void TextBox_KeyUp(object sender, Avalonia.Input.KeyEventArgs e)
+    {
+        if (e.Key == Avalonia.Input.Key.Enter)
+        {
+            // Call the same logic as LoginAction
+            LoginAction(sender, e);
+        }
+    }
 }

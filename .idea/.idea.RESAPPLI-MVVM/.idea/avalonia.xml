@@ -4,6 +4,7 @@
     <option name="projectPerEditor">
       <map>
         <entry key="RESAPPLI-MVVM/App.axaml" value="RESAPPLI-MVVM/RESAPPLI-MVVM.csproj" />
+        <entry key="RESAPPLI-MVVM/Themes/FluentCalendarControl.axaml" value="RESAPPLI-MVVM/RESAPPLI-MVVM.csproj" />
         <entry key="RESAPPLI-MVVM/Views/CreateCompanyWindow.axaml" value="RESAPPLI-MVVM/RESAPPLI-MVVM.csproj" />
         <entry key="RESAPPLI-MVVM/Views/LoginView.axaml" value="RESAPPLI-MVVM/RESAPPLI-MVVM.csproj" />
         <entry key="RESAPPLI-MVVM/Views/LoginWindow.axaml" value="RESAPPLI-MVVM/RESAPPLI-MVVM.csproj" />

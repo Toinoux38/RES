@@ -2,9 +2,16 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:si="clr-namespace:SatialInterfaces.Controls.Calendar;assembly=CalendarControl"
+        xmlns:v="clr-namespace:RESAPPLI_MVVM.Views"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="RESAPPLI_MVVM.Views.PlanningList"
-        Title="PlanningList">
+        Title="PlanningList"
+        TransparencyLevelHint="AcrylicBlur"
+        Background="rgba(44, 82, 129, 0.26)"
+        WindowStartupLocation="CenterScreen"
+        ExtendClientAreaToDecorationsHint="True"
+        RequestedThemeVariant="Dark">
     
     
     
@@ -18,7 +25,7 @@
         <!-- Barre latérale avec des boutons -->
         <StackPanel Grid.Column="0" Background="#2c5382" Width="300" Orientation="Vertical" Margin="0">
             <!-- Logo -->
-            <Image Source="/Assets/res-logo-clair.png" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,20,0,0" Width="200" Height="200"/>
+            <Image Source="/Assets/res-logo-clair.png" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,20,0,0" Width="160" Height="160" />
 
             <!-- Boutons pour les différentes actions -->
             <Button Content="Liste des plannings" Margin="0,0,0,10"/>
@@ -32,11 +39,23 @@
 
         <!-- Contenu principal -->
         <Grid Grid.Column="1">
-    <TextBlock  x:Name="WelcomeTXT" FontSize="19" VerticalAlignment="Top" Margin="0,0,0,10" />
+    <TextBlock  x:Name="WelcomeTXT" FontSize="19" VerticalAlignment="Top" Margin="0,0,0,10" IsVisible="False"/>
             
+    <!-- <si:CalendarControl x:Name="CalendarControlMain" Margin="10,20,0,0"/> -->
+    <si:CalendarControl Name="CalendarControl" AutoScrollToSelectedItem="True" AllowDelete="True" Items="{Binding $parent[v:PlanningList].Items}" SelectionChanged="CalendarControlSelectionChanged" WeekendIsVisible="False">
+        <Design.DataContext>
+            <v:AppointmentViewModel />
+        </Design.DataContext>
+        <si:CalendarControl.ItemTemplate>
+            <DataTemplate>
+                <Grid x:CompileBindings="True" x:DataType="v:AppointmentViewModel">
+                    <si:AppointmentControl Begin="{Binding Begin}" End="{Binding End}" Text="{Binding Text}" Color="{Binding Status, Converter={x:Static v:ColorConverter.Instance}}" />
+                </Grid>
+            </DataTemplate>
+        </si:CalendarControl.ItemTemplate>
+    </si:CalendarControl>
     
-    
-    <DataGrid x:Name="PlanningDataGrid" AutoGenerateColumns="True" Margin="0,0,0,10"/>
+    <DataGrid x:Name="PlanningDataGrid" AutoGenerateColumns="True" Margin="0,0,0,10" IsVisible="False"/>
     
     
         </Grid>
