@@ -16,9 +16,9 @@
         </Grid.ColumnDefinitions>
 
         <!-- Barre latérale avec des boutons -->
-        <StackPanel Grid.Column="0" Background="LightGray" Width="200" Orientation="Vertical" Margin="10">
+        <StackPanel Grid.Column="0" Background="#2c5382" Width="300" Orientation="Vertical" Margin="0">
             <!-- Logo -->
-            <Image Source="/Assets/res-logo-sombre.png" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,20,0,0" Width="200" Height="200"/>
+            <Image Source="/Assets/res-logo-clair.png" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,20,0,0" Width="200" Height="200"/>
 
             <!-- Boutons pour les différentes actions -->
             <Button Content="Liste des plannings" Margin="0,0,0,10"/>
@@ -34,7 +34,6 @@
         <Grid Grid.Column="1">
     <TextBlock  x:Name="WelcomeTXT" FontSize="19" VerticalAlignment="Top" Margin="0,0,0,10" />
             
-    <TextBlock FontSize="20" Text="Liste des plannings de l'entreprise" Margin="0,0,0,10"/>
     
     
     <DataGrid x:Name="PlanningDataGrid" AutoGenerateColumns="True" Margin="0,0,0,10"/>

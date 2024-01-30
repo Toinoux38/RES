@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\h.jacquel\\source\\repos\\RESAPPLI-MVVM\\RESAPPLI-MVVM\\RESAPPLI-MVVM.csproj": {}
+    "C:\\Users\\antoi\\RES-APPLI-2\\RESAPPLI-MVVM\\RESAPPLI-MVVM.csproj": {}
   },
   "projects": {
-    "C:\\Users\\h.jacquel\\source\\repos\\RESAPPLI-MVVM\\RESAPPLI-MVVM\\RESAPPLI-MVVM.csproj": {
+    "C:\\Users\\antoi\\RES-APPLI-2\\RESAPPLI-MVVM\\RESAPPLI-MVVM.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\h.jacquel\\source\\repos\\RESAPPLI-MVVM\\RESAPPLI-MVVM\\RESAPPLI-MVVM.csproj",
+        "projectUniqueName": "C:\\Users\\antoi\\RES-APPLI-2\\RESAPPLI-MVVM\\RESAPPLI-MVVM.csproj",
         "projectName": "RESAPPLI-MVVM",
-        "projectPath": "C:\\Users\\h.jacquel\\source\\repos\\RESAPPLI-MVVM\\RESAPPLI-MVVM\\RESAPPLI-MVVM.csproj",
-        "packagesPath": "C:\\Users\\h.jacquel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\h.jacquel\\source\\repos\\RESAPPLI-MVVM\\RESAPPLI-MVVM\\obj\\",
+        "projectPath": "C:\\Users\\antoi\\RES-APPLI-2\\RESAPPLI-MVVM\\RESAPPLI-MVVM.csproj",
+        "packagesPath": "C:\\Users\\antoi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\antoi\\RES-APPLI-2\\RESAPPLI-MVVM\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\h.jacquel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\antoi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,7 +26,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {

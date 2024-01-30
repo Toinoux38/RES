@@ -13,21 +13,21 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = RESAPPLI-MVVM
-build_property.ProjectDir = C:\Users\h.jacquel\source\repos\RESAPPLI-MVVM\RESAPPLI-MVVM\
+build_property.ProjectDir = C:\Users\antoi\RES-APPLI-2\RESAPPLI-MVVM\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 
-[C:/Users/h.jacquel/source/repos/RESAPPLI-MVVM/RESAPPLI-MVVM/App.axaml]
+[C:/Users/antoi/RES-APPLI-2/RESAPPLI-MVVM/App.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Users/h.jacquel/source/repos/RESAPPLI-MVVM/RESAPPLI-MVVM/Views/CreateCompanyWindow.axaml]
+[C:/Users/antoi/RES-APPLI-2/RESAPPLI-MVVM/Views/CreateCompanyWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Users/h.jacquel/source/repos/RESAPPLI-MVVM/RESAPPLI-MVVM/Views/LoginWindow.axaml]
+[C:/Users/antoi/RES-APPLI-2/RESAPPLI-MVVM/Views/LoginWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Users/h.jacquel/source/repos/RESAPPLI-MVVM/RESAPPLI-MVVM/Views/MainWindow.axaml]
+[C:/Users/antoi/RES-APPLI-2/RESAPPLI-MVVM/Views/MainWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Users/h.jacquel/source/repos/RESAPPLI-MVVM/RESAPPLI-MVVM/Views/PlanningList.axaml]
+[C:/Users/antoi/RES-APPLI-2/RESAPPLI-MVVM/Views/PlanningList.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml

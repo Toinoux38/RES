@@ -9,19 +9,19 @@
         Icon="/Assets/avalonia-logo.ico"
         Title="RESAPPLI_MVVM">
 	
+	<Grid>
+		<!-- Ajout de l'élément Image -->
+		<Image Source="/Assets/res-logo-sombre.png" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,20,0,0" Width="200" Height="200"/>
 
-		
-    <Grid>
-        <!-- Ajout de l'élément Image -->
-        <Image Source="/Assets/res-logo-sombre.png" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,20,0,0" Width="200" Height="200"/>
-
-        <TextBlock Text="Bienvenue sur la RES" FontSize="28" FontWeight="Bold" Margin="0,200,0,0"
-                    HorizontalAlignment="Center" />
+		<TextBlock Text="Bienvenue sur la RES" FontSize="28" FontWeight="Bold" Margin="0,200,0,0"
+		           HorizontalAlignment="Center" />
 		
 		<StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
 			<!-- Nommez le bouton pour pouvoir le retrouver dans le code-behind -->
 			<Button x:Name="CreateCompanyButton" Content="Créer mon entreprise" Width="200" Margin="0,20"/>
 			<Button x:Name="SeConnectionButton" Content="Se connecter" Width="200" Margin="0,20" />
 		</StackPanel>
-    </Grid>
+	</Grid>
+		
+    
 </Window>

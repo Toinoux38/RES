@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AvaloniaProject">
+    <option name="projectPerEditor">
+      <map>
+        <entry key="RESAPPLI-MVVM/App.axaml" value="RESAPPLI-MVVM/RESAPPLI-MVVM.csproj" />
+        <entry key="RESAPPLI-MVVM/Views/CreateCompanyWindow.axaml" value="RESAPPLI-MVVM/RESAPPLI-MVVM.csproj" />
+        <entry key="RESAPPLI-MVVM/Views/LoginView.axaml" value="RESAPPLI-MVVM/RESAPPLI-MVVM.csproj" />
+        <entry key="RESAPPLI-MVVM/Views/LoginWindow.axaml" value="RESAPPLI-MVVM/RESAPPLI-MVVM.csproj" />
+        <entry key="RESAPPLI-MVVM/Views/MainWindow.axaml" value="RESAPPLI-MVVM/RESAPPLI-MVVM.csproj" />
+        <entry key="RESAPPLI-MVVM/Views/PlanningList.axaml" value="RESAPPLI-MVVM/RESAPPLI-MVVM.csproj" />
+      </map>
+    </option>
+  </component>
+</project>
