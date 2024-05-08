@@ -4,14 +4,21 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d" d:DesignWidth="400" d:DesignHeight="300"
         x:Class="RESAPPLI_MVVM.Views.CreateCompanyWindow"
-        Title="Inscription d'entreprise">
+        Title="Inscription d'entreprise"
+        Width="410"
+        Height="390"
+        WindowStartupLocation="CenterScreen"
+        TransparencyLevelHint="AcrylicBlur"
+        Background="Transparent"
+        Icon="{x:Null}"
+        ExtendClientAreaToDecorationsHint="True">
 
-	<StackPanel Margin="20">
-		<TextBlock Text="Formulaire d'inscription d'entreprise" FontSize="20" FontWeight="Bold" Margin="0,0,0,10"/>
+	<StackPanel Margin="20" >
+		<TextBlock Text="Formulaire d'inscription d'entreprise" FontSize="20" FontWeight="Bold" Margin="0,0,0,10" TextAlignment="Center"/>
 
 		<TextBox x:Name="CompanyNameTextBox" Watermark="Nom de l'entreprise" Margin="0,0,0,10"/>
 
-		<TextBlock Text="Inscription Administrateur" FontSize="20" FontWeight="Bold" Margin="0,0,0,10"/>
+		<TextBlock Text="Inscription Administrateur" FontSize="20" FontWeight="Bold" Margin="0,0,0,10" TextAlignment="Center"/>
 
 		<TextBox x:Name="NomAdmin" Watermark="Nom de l'Administrateur" Margin="0,0,0,10"/>	
 		<TextBox x:Name="PrenomAdmin" Watermark="Prenom de l'Administrateur" Margin="0,0,0,10"/>	
@@ -22,8 +29,8 @@
 		<!-- Autres champs requis pour l'inscription -->
 
 		<StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-			<Button Content="Inscrire" Width="100" Click="InscriptionButton_Click" Margin="0,10"/>
-			<Button Content="Annuler" Width="100" Click="AnnulerButton_Click" Margin="10,10"/>
+			<Button Content="Inscrire" Width="100" Click="InscriptionButton_Click" Margin="0,10" HorizontalContentAlignment="Center"/>
+			<Button Content="Annuler" Width="100" Click="AnnulerButton_Click" Margin="10,10" HorizontalContentAlignment="Center"/>
 		</StackPanel>
 	</StackPanel>
 </Window>

@@ -1,4 +1,6 @@
+using System;
 using Avalonia;
+using Avalonia.Animation;
 using Avalonia.Controls;
 using Avalonia.Markup.Xaml;
 
@@ -9,12 +11,15 @@ namespace RESAPPLI_MVVM.Views
         public MainWindow()
         {
             InitializeComponent();
+            var transition = new CrossFade(TimeSpan.FromMilliseconds(500));
+
+
         }
 
         private void InitializeComponent()
         {
             AvaloniaXamlLoader.Load(this);
-            // Trouvez le bouton "Créer mon entreprise" et abonnez-vous à son événement Click
+            // Trouvez le bouton "Crï¿½er mon entreprise" et abonnez-vous ï¿½ son ï¿½vï¿½nement Click
             var createCompanyButton = this.FindControl<Button>("CreateCompanyButton");
             createCompanyButton.Click += CreateCompanyButton_Click;
 
@@ -24,7 +29,7 @@ namespace RESAPPLI_MVVM.Views
 
         private void CreateCompanyButton_Click(object sender, Avalonia.Interactivity.RoutedEventArgs e)
         {
-            // Lorsque le bouton est cliqué, ouvrez la nouvelle fenêtre CreateCompanyWindow
+            // Lorsque le bouton est cliquï¿½, ouvrez la nouvelle fenï¿½tre CreateCompanyWindow
             var createCompanyWindow = new CreateCompanyWindow();
             createCompanyWindow.Show();
         }

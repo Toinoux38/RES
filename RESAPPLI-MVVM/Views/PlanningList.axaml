@@ -28,17 +28,14 @@
             <Image Source="/Assets/res-logo-clair.png" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,20,0,0" Width="160" Height="160" />
 
             <!-- Boutons pour les différentes actions -->
-            <Button Content="Liste des plannings" Margin="0,0,0,10"/>
-            <Button Content="Ajouter un planning" Margin="0,0,0,10"/>
+            <Button Content="Liste des salles" Margin="0,0,0,10"/>
             <Button Content="Ajouter une réservation" Margin="0,0,0,10"/>
-            <Button Content="Ajouter une categorie de planning" Margin="0,0,0,10"/>
-            <Button Content="Ajouter une categorie de réservation" Margin="0,0,0,10"/>
             <Button Content="Mon profil" Margin="0,0,0,10"/>
             <Button Content="Gérer les membres" Margin="0,0,0,10" />
         </StackPanel>
 
         <!-- Contenu principal -->
-        <Grid Grid.Column="1">
+        <Grid Grid.Column="1" Margin="8,40,8,8" ColumnDefinitions="*,Auto" RowDefinitions="*,Auto">
     <TextBlock  x:Name="WelcomeTXT" FontSize="19" VerticalAlignment="Top" Margin="0,0,0,10" IsVisible="False"/>
             
     <!-- <si:CalendarControl x:Name="CalendarControlMain" Margin="10,20,0,0"/> -->
@@ -54,6 +51,17 @@
             </DataTemplate>
         </si:CalendarControl.ItemTemplate>
     </si:CalendarControl>
+    <StackPanel Grid.Row="1" Grid.Column="0" Margin="0,8,0,0" Spacing="8" Orientation="Horizontal">
+        
+        <Button Click="PreviousButtonClick">&lt;</Button>
+        <Button Click="ThisWeekButtonClick">Aujourd'hui</Button>
+        <Button Click="NextButtonClick">&gt;</Button>
+        <Button Click="NewButtonClick">Créer une réservation</Button>
+        <CheckBox Content="Voir le WeekEnd" IsChecked="{Binding #CalendarControl.WeekendIsVisible}" />
+
+        <TextBlock Name="Info" VerticalAlignment="Center" />
+    </StackPanel>
+    
     
     <DataGrid x:Name="PlanningDataGrid" AutoGenerateColumns="True" Margin="0,0,0,10" IsVisible="False"/>
     

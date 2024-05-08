@@ -1,0 +1,2 @@
+C:\Users\antoi\RES-APPLI-2\RESAPPLI-MVVM\bin\Debug\net6.0\win-x64\publish\RESAPPLI-MVVM.pdb
+C:\Users\antoi\RES-APPLI-2\RESAPPLI-MVVM\bin\Debug\net6.0\win-x64\publish\RESAPPLI-MVVM.exe

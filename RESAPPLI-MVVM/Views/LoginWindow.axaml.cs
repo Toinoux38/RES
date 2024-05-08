@@ -5,7 +5,7 @@ using Avalonia.Controls;
 using Avalonia.Markup.Xaml;
 using Microsoft.EntityFrameworkCore;
 using RESAPPLI_MVVM.Data;
-
+using static RESAPPLI_MVVM.Views.MainWindow;
 namespace RESAPPLI_MVVM.Views;
 
 public partial class LoginWindow : Window
@@ -36,6 +36,7 @@ public partial class LoginWindow : Window
                 PlanningList viewPlanning = new PlanningList(user);
                 viewPlanning.Show();
                 this.Close();
+
 
             }
             else // Fail
