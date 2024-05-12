@@ -34,3 +34,6 @@ build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
 [C:/Users/antoi/RES-APPLI-2/RESAPPLI-MVVM/Views/PlanningList.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[C:/Users/antoi/RES-APPLI-2/RESAPPLI-MVVM/Views/ReservationsList.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml

@@ -19,7 +19,6 @@ namespace RESAPPLI_MVVM.Views
         private void InitializeComponent()
         {
             AvaloniaXamlLoader.Load(this);
-            // Trouvez le bouton "Cr�er mon entreprise" et abonnez-vous � son �v�nement Click
             var createCompanyButton = this.FindControl<Button>("CreateCompanyButton");
             createCompanyButton.Click += CreateCompanyButton_Click;
 
@@ -29,7 +28,7 @@ namespace RESAPPLI_MVVM.Views
 
         private void CreateCompanyButton_Click(object sender, Avalonia.Interactivity.RoutedEventArgs e)
         {
-            // Lorsque le bouton est cliqu�, ouvrez la nouvelle fen�tre CreateCompanyWindow
+            // Lorsque le bouton est cliqué, ouvre la nouvelle fenetre CreateCompanyWindow
             var createCompanyWindow = new CreateCompanyWindow();
             createCompanyWindow.Show();
         }

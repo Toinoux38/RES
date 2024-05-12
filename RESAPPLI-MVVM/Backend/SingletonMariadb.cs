@@ -11,6 +11,7 @@ namespace RESAPPLI_MVVM.Data
 
         public DbSet<Entreprise> Entreprises { get; set; }
         public DbSet<Utilisateur> Utilisateurs { get; set; }
+        public DbSet<Reservation> Reservations { get; set; }
 
 
         private SingletonMariadb(DbContextOptions<SingletonMariadb> options) : base(options) { }

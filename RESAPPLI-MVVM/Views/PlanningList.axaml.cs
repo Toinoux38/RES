@@ -227,6 +227,13 @@ public partial class PlanningList : Window
 		var begin = diff <= 0 ? dateTime.AddDays(diff) : dateTime.AddDays(diff - 7);
 		return begin.Date;
 	}
+	private void ReservationsButtonClick(object sender, RoutedEventArgs e)
+	{
+		// Naviguer vers la vue ReservationsList
+		var reservationsListView = new ReservationsList();
+		reservationsListView.Show();
+		this.Close();
+	}
 	static readonly Random Random = new();
 	CalendarControl? calendarControl;
 	AvaloniaList<AppointmentViewModel> items = new();

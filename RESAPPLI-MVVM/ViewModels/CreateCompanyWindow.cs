@@ -29,7 +29,7 @@ namespace RESAPPLI_MVVM.Views
                 var entreprise = new Entreprise
                 {
                     Nom = ((TextBox)this.FindControl<TextBox>("CompanyNameTextBox")).Text,
-                    DateCreation = DateTime.Today // Vous pouvez remplacer par la date d'inscription fournie par l'utilisateur
+                    DateCreation = DateTime.Today 
                 };
 
                 Console.WriteLine(entreprise.Nom);

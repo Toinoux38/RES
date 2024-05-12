@@ -10,6 +10,7 @@
         <entry key="RESAPPLI-MVVM/Views/LoginWindow.axaml" value="RESAPPLI-MVVM/RESAPPLI-MVVM.csproj" />
         <entry key="RESAPPLI-MVVM/Views/MainWindow.axaml" value="RESAPPLI-MVVM/RESAPPLI-MVVM.csproj" />
         <entry key="RESAPPLI-MVVM/Views/PlanningList.axaml" value="RESAPPLI-MVVM/RESAPPLI-MVVM.csproj" />
+        <entry key="RESAPPLI-MVVM/Views/ReservationsList.axaml" value="RESAPPLI-MVVM/RESAPPLI-MVVM.csproj" />
         <entry key="RESAPPLI-MVVM/Views/RoomList.axaml" value="RESAPPLI-MVVM/RESAPPLI-MVVM.csproj" />
       </map>
     </option>
