@@ -18,16 +18,16 @@
         <TextBlock Text="Ajouter une réservation" FontSize="20" FontWeight="Bold" Margin="0,0,0,10" TextAlignment="Center"/>
 
         <TextBlock Grid.Row="0" Text="Day:" VerticalAlignment="Center"/>
-        <DatePicker Grid.Row="0" Grid.Column="1" Name="DayPicker" Margin="5"/>
+        <DatePicker Grid.Row="0" Grid.Column="1" x:Name="DayPicker" Margin="5"/>
 
         <TextBlock Grid.Row="1" Text="Start Hour:" VerticalAlignment="Center"/>
-        <TimePicker Grid.Row="1" Grid.Column="1" Name="StartHourPicker" Margin="5"/>
+        <TimePicker Grid.Row="1" Grid.Column="1" x:Name="StartHourPicker" Margin="5"/>
 
         <TextBlock Grid.Row="2" Text="End Hour:" VerticalAlignment="Center"/>
-        <TimePicker Grid.Row="2" Grid.Column="1" Name="EndHourPicker" Margin="5"/>
+        <TimePicker Grid.Row="2" Grid.Column="1" x:Name="EndHourPicker" Margin="5"/>
 
         <TextBlock Grid.Row="3" Text="Note:" VerticalAlignment="Center"/>
-        <TextBox Grid.Row="3" Grid.Column="1" Name="NoteTextBox" Margin="5"/>
+        <TextBox Grid.Row="3" Grid.Column="1" x:Name="NoteTextBox" Margin="5"/>
 		
 
         <!-- Autres champs requis pour l'inscription -->

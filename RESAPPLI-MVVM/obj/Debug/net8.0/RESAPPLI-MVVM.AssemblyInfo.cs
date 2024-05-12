@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RESAPPLI-MVVM")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1a398c0d631ecbfc13c3e60cfeaa204ff4c37f36")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e44e45a3ea910438a015d6185915c8514b65e7c6")]
 [assembly: System.Reflection.AssemblyProductAttribute("RESAPPLI-MVVM")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RESAPPLI-MVVM")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

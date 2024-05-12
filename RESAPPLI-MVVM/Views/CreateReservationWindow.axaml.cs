@@ -11,12 +11,9 @@ namespace RESAPPLI_MVVM.Views
 {
     public partial class CreateReservationWindow : Window
     {
-        private readonly iReservationService _reservationService;
-
         public CreateReservationWindow()
         {
             InitializeComponent();
-            _reservationService = Locator.Current.GetService<iReservationService>();
         }
 
         private void InitializeComponent()
@@ -31,6 +28,8 @@ namespace RESAPPLI_MVVM.Views
 
         private void SaveButton_Click(object sender, RoutedEventArgs e)
         {
+            var db = Locator.Current.GetService<iReservationService>();
+
             // Convert DateTimeOffset to DateTime for DateReservation
             DateTime dateReservation = DayPicker.SelectedDate?.DateTime ?? DateTime.Today;
 
@@ -48,7 +47,7 @@ namespace RESAPPLI_MVVM.Views
             };
 
             // Add the reservation to the database using the service
-            _reservationService.AddReservation(reservation);
+            db.AddReservation(reservation);
 
             // Close the window
             Close();

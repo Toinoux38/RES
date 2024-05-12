@@ -8,7 +8,7 @@
         x:Class="RESAPPLI_MVVM.Views.PlanningList"
         Title="PlanningList"
         TransparencyLevelHint="AcrylicBlur"
-        Background="rgba(44, 82, 129, 0.26)"
+        Background="rgba(44, 82, 129, 0.36)"
         WindowStartupLocation="CenterScreen"
         ExtendClientAreaToDecorationsHint="True"
         RequestedThemeVariant="Dark">

@@ -5,7 +5,12 @@
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="RESAPPLI_MVVM.Views.ReservationsList"
         Title="ReservationsList"
-        x:CompileBindings="False">
+        x:CompileBindings="False"
+        TransparencyLevelHint="AcrylicBlur"
+        Background="rgba(44, 82, 129, 0.26)"
+        WindowStartupLocation="CenterScreen"
+        ExtendClientAreaToDecorationsHint="True"
+        RequestedThemeVariant="Dark">
     <Grid>
         <!-- Contenu principal de la fenêtre -->
         <Grid.ColumnDefinitions>
