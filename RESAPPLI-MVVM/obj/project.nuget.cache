@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "9pV4T94x4hQ1P7ScSrPTa2IwQ+XEVhcVSbVengPSayS3tu4ecqCdFCfNnscsxLlVoxGI++Dd6VN9iS6Qf7jP1w==",
+  "dgSpecHash": "I5q7DH4VxBQlEE9Ckf4GAFntPbXzqRY9d9zRZjY0h0vWwYbVHXJUbwbgnjc9QbnefdVyFFGGWVX5LjSMObj6Fw==",
   "success": true,
   "projectFilePath": "C:\\Users\\antoi\\RES-APPLI-2\\RESAPPLI-MVVM\\RESAPPLI-MVVM.csproj",
   "expectedPackageFiles": [
@@ -73,7 +73,7 @@
     "C:\\Users\\antoi\\.nuget\\packages\\skiasharp.nativeassets.macos\\2.88.6\\skiasharp.nativeassets.macos.2.88.6.nupkg.sha512",
     "C:\\Users\\antoi\\.nuget\\packages\\skiasharp.nativeassets.webassembly\\2.88.6\\skiasharp.nativeassets.webassembly.2.88.6.nupkg.sha512",
     "C:\\Users\\antoi\\.nuget\\packages\\skiasharp.nativeassets.win32\\2.88.6\\skiasharp.nativeassets.win32.2.88.6.nupkg.sha512",
-    "C:\\Users\\antoi\\.nuget\\packages\\splat\\14.4.1\\splat.14.4.1.nupkg.sha512",
+    "C:\\Users\\antoi\\.nuget\\packages\\splat\\15.0.1\\splat.15.0.1.nupkg.sha512",
     "C:\\Users\\antoi\\.nuget\\packages\\system.codedom\\4.4.0\\system.codedom.4.4.0.nupkg.sha512",
     "C:\\Users\\antoi\\.nuget\\packages\\system.collections.immutable\\5.0.0\\system.collections.immutable.5.0.0.nupkg.sha512",
     "C:\\Users\\antoi\\.nuget\\packages\\system.componentmodel.annotations\\4.5.0\\system.componentmodel.annotations.4.5.0.nupkg.sha512",

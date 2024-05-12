@@ -85,6 +85,10 @@
             "Pomelo.EntityFrameworkCore.MySql": {
               "target": "Package",
               "version": "[7.0.0, )"
+            },
+            "Splat": {
+              "target": "Package",
+              "version": "[15.0.1, )"
             }
           },
           "imports": [

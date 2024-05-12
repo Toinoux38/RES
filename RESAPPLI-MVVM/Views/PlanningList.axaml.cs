@@ -60,8 +60,8 @@ using Avalonia.Interactivity;
 using Avalonia.Markup.Xaml;
 using Avalonia.Media;
 using Avalonia.Threading;
-using RESAPPLI_MVVM.Data;
-using RESAPPLI_MVVM.Models;
+
+using RESAPPLI_MVVM.TestModels;
 using SatialInterfaces.Controls.Calendar;
 
 namespace RESAPPLI_MVVM.Views;
@@ -232,7 +232,6 @@ public partial class PlanningList : Window
 		// Naviguer vers la vue ReservationsList
 		var reservationsListView = new ReservationsList();
 		reservationsListView.Show();
-		this.Close();
 	}
 	static readonly Random Random = new();
 	CalendarControl? calendarControl;

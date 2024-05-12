@@ -217,6 +217,7 @@ public partial class RESAPPLIContext : DbContext
             entity.Property(e => e.HeureFin).HasColumnType("time");
             entity.Property(e => e.IdCategorie).HasColumnName("ID_Categorie");
             entity.Property(e => e.IdPlanning).HasColumnName("ID_Planning");
+            entity.Property(e => e.Note).HasColumnName("Note");
 
             entity.HasOne(d => d.IdCategorieNavigation).WithMany(p => p.Reservations)
                 .HasForeignKey(d => d.IdCategorie)

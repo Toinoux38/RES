@@ -9,7 +9,7 @@ public partial class Entreprise
 
     public string? Nom { get; set; }
 
-    public DateOnly? DateCreation { get; set; }
+    public DateOnly DateCreation { get; set; }
 
     public virtual ICollection<Categorieplanning> Categorieplannings { get; } = new List<Categorieplanning>();
 

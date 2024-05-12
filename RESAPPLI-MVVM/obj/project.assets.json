@@ -1423,15 +1423,15 @@
           }
         }
       },
-      "Splat/14.4.1": {
+      "Splat/15.0.1": {
         "type": "package",
         "compile": {
-          "lib/net6.0/Splat.dll": {
+          "lib/net8.0/Splat.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net6.0/Splat.dll": {
+          "lib/net8.0/Splat.dll": {
             "related": ".xml"
           }
         }
@@ -3912,19 +3912,23 @@
         "skiasharp.nativeassets.win32.nuspec"
       ]
     },
-    "Splat/14.4.1": {
-      "sha512": "Z1Mncnzm9pNIaIbZ/EWH6x5ESnKsmAvu8HP4StBRw+yhz0lzE7LCbt22TNTPaFrYLYbYCbGQIc/61yuSnpLidg==",
+    "Splat/15.0.1": {
+      "sha512": "jG1HhVm9aSSNdwyE3jpfzah58vCf8q0fG1jPcEhqDmZaYUgJBRr5VY4w1z4K0rof7XiprRRwzhF/17rpU3xv1Q==",
       "type": "package",
-      "path": "splat/14.4.1",
+      "path": "splat/15.0.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE/LICENSE",
         "lib/net6.0/Splat.dll",
         "lib/net6.0/Splat.xml",
+        "lib/net7.0/Splat.dll",
+        "lib/net7.0/Splat.xml",
+        "lib/net8.0/Splat.dll",
+        "lib/net8.0/Splat.xml",
         "lib/netstandard2.0/Splat.dll",
         "lib/netstandard2.0/Splat.xml",
-        "splat.14.4.1.nupkg.sha512",
+        "splat.15.0.1.nupkg.sha512",
         "splat.nuspec"
       ]
     },
@@ -4843,7 +4847,8 @@
       "CalendarControl.Avalonia >= 11.0.6",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.0",
       "Microsoft.EntityFrameworkCore.Tools >= 7.0.2",
-      "Pomelo.EntityFrameworkCore.MySql >= 7.0.0"
+      "Pomelo.EntityFrameworkCore.MySql >= 7.0.0",
+      "Splat >= 15.0.1"
     ]
   },
   "packageFolders": {
@@ -4931,6 +4936,10 @@
           "Pomelo.EntityFrameworkCore.MySql": {
             "target": "Package",
             "version": "[7.0.0, )"
+          },
+          "Splat": {
+            "target": "Package",
+            "version": "[15.0.1, )"
           }
         },
         "imports": [

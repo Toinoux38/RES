@@ -4,7 +4,9 @@ using Avalonia;
 using Avalonia.Controls;
 using Avalonia.Markup.Xaml;
 using Microsoft.EntityFrameworkCore;
-using RESAPPLI_MVVM.Data;
+using RESAPPLI_MVVM.Services;
+using RESAPPLI_MVVM.TestModels;
+using Splat;
 using static RESAPPLI_MVVM.Views.MainWindow;
 namespace RESAPPLI_MVVM.Views;
 
@@ -20,12 +22,9 @@ public partial class LoginWindow : Window
         string mail = ((TextBox)this.FindControl<TextBox>("MailAdmin")).Text;
         string password = Encryption.Encryption.GetSHA256Hash(((TextBox)this.FindControl<TextBox>("PassAdmin")).Text);
 
-        var db = SingletonMariadb.GetInstance();
+        var db = Locator.Current.GetService<iReservationService>();
 
-        var user = db.Utilisateurs
-            .Include(u => u.Entreprise)
-            .FirstOrDefault(u => u.Email == mail);
-
+        Utilisateur user = db.FindUtilisateurByMail(mail);
 
         if (user != null) // l'utilisateur a été trouvé
         {

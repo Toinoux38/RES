@@ -16,6 +16,8 @@ public partial class Reservation
     public int? IdPlanning { get; set; }
 
     public int? IdCategorie { get; set; }
+    
+    public string? Note { get; set; }
 
     public virtual Categoriereservation? IdCategorieNavigation { get; set; }
 

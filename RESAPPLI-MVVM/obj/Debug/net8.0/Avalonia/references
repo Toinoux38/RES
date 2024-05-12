@@ -61,7 +61,7 @@ C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.0\ref\net8.0\netstan
 C:\Users\antoi\.nuget\packages\pomelo.entityframeworkcore.mysql\7.0.0\lib\net7.0\Pomelo.EntityFrameworkCore.MySql.dll
 C:\Users\antoi\.nuget\packages\reactiveui\18.3.1\lib\net6.0\ReactiveUI.dll
 C:\Users\antoi\.nuget\packages\skiasharp\2.88.6\lib\net6.0\SkiaSharp.dll
-C:\Users\antoi\.nuget\packages\splat\14.4.1\lib\net6.0\Splat.dll
+C:\Users\antoi\.nuget\packages\splat\15.0.1\lib\net8.0\Splat.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.0\ref\net8.0\System.AppContext.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.0\ref\net8.0\System.Buffers.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.0\ref\net8.0\System.Collections.Concurrent.dll
