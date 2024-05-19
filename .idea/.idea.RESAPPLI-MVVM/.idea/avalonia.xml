@@ -7,6 +7,7 @@
         <entry key="RESAPPLI-MVVM/Themes/FluentCalendarControl.axaml" value="RESAPPLI-MVVM/RESAPPLI-MVVM.csproj" />
         <entry key="RESAPPLI-MVVM/Views/CreateCompanyWindow.axaml" value="RESAPPLI-MVVM/RESAPPLI-MVVM.csproj" />
         <entry key="RESAPPLI-MVVM/Views/CreateReservation.axaml" value="RESAPPLI-MVVM/RESAPPLI-MVVM.csproj" />
+        <entry key="RESAPPLI-MVVM/Views/CreateReservationWindow.axaml" value="RESAPPLI-MVVM/RESAPPLI-MVVM.csproj" />
         <entry key="RESAPPLI-MVVM/Views/LoginView.axaml" value="RESAPPLI-MVVM/RESAPPLI-MVVM.csproj" />
         <entry key="RESAPPLI-MVVM/Views/LoginWindow.axaml" value="RESAPPLI-MVVM/RESAPPLI-MVVM.csproj" />
         <entry key="RESAPPLI-MVVM/Views/MainWindow.axaml" value="RESAPPLI-MVVM/RESAPPLI-MVVM.csproj" />

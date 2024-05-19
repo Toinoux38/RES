@@ -28,33 +28,28 @@ public partial class LoginWindow : Window
 
         if (user != null) // l'utilisateur a été trouvé
         {
-
             if (user.PasswordHash == password) // Matching
             {
                 Console.WriteLine("Login Reussis");
                 PlanningList viewPlanning = new PlanningList(user);
                 viewPlanning.Show();
                 this.Close();
-
-
             }
             else // Fail
             {
                 Console.WriteLine("Login Failed");
             }
-            
         }
         else
         {
             Console.WriteLine("L'utilisateur n'existe pas");
         }
-        
     }
     private void TextBox_KeyUp(object sender, Avalonia.Input.KeyEventArgs e)
     {
         if (e.Key == Avalonia.Input.Key.Enter)
         {
-            // Call the same logic as LoginAction
+            // pour la touche entrée (sinon on est obligé d'appuyer sur le bouton avec la souris...)
             LoginAction(sender, e);
         }
     }
