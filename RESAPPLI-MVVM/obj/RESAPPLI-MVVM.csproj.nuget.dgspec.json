@@ -72,6 +72,18 @@
               "target": "Package",
               "version": "[11.0.6, )"
             },
+            "DialogHost.Avalonia": {
+              "target": "Package",
+              "version": "[0.7.7, )"
+            },
+            "Markdown.Avalonia.Tight": {
+              "target": "Package",
+              "version": "[11.0.2, )"
+            },
+            "MessageBox.Avalonia": {
+              "target": "Package",
+              "version": "[3.1.5.1, )"
+            },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[6.0.0, )"

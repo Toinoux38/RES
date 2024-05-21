@@ -178,3 +178,7 @@ C:\Users\antoi\RES-APPLI-2\RESAPPLI-MVVM\obj\Debug\net8.0\RESAPPLI-MVVM.pdb
 C:\Users\antoi\RES-APPLI-2\RESAPPLI-MVVM\obj\Debug\net8.0\RESAPPLI-MVVM.csproj.CopyComplete
 C:\Users\antoi\RES-APPLI-2\RESAPPLI-MVVM\obj\Debug\net8.0\RESAPPLI-MVVM.genruntimeconfig.cache
 C:\Users\antoi\RES-APPLI-2\RESAPPLI-MVVM\obj\Debug\net8.0\ref\RESAPPLI-MVVM.dll
+C:\Users\antoi\RES-APPLI-2\RESAPPLI-MVVM\bin\Debug\net8.0\ColorTextBlock.Avalonia.dll
+C:\Users\antoi\RES-APPLI-2\RESAPPLI-MVVM\bin\Debug\net8.0\DialogHost.Avalonia.dll
+C:\Users\antoi\RES-APPLI-2\RESAPPLI-MVVM\bin\Debug\net8.0\Markdown.Avalonia.dll
+C:\Users\antoi\RES-APPLI-2\RESAPPLI-MVVM\bin\Debug\net8.0\MsBox.Avalonia.dll

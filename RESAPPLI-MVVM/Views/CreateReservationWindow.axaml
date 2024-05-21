@@ -14,23 +14,20 @@
         Icon="{x:Null}"
         ExtendClientAreaToDecorationsHint="True">
 
-    <StackPanel Margin="20" >
+    <StackPanel Margin="20">
         <TextBlock Text="Ajouter une réservation" FontSize="20" FontWeight="Bold" Margin="0,0,0,10" TextAlignment="Center"/>
 
-        <TextBlock Grid.Row="0" Text="Day:" VerticalAlignment="Center"/>
-        <DatePicker Grid.Row="0" Grid.Column="1" x:Name="DayPicker" Margin="5"/>
+        <TextBlock Text="Day:" VerticalAlignment="Center"/>
+        <DatePicker x:Name="DayPicker" Margin="5"/>
 
-        <TextBlock Grid.Row="1" Text="Start Hour:" VerticalAlignment="Center"/>
-        <TimePicker Grid.Row="1" Grid.Column="1" x:Name="StartHourPicker" Margin="5"/>
+        <TextBlock Text="Start Hour:" VerticalAlignment="Center"/>
+        <TimePicker x:Name="StartHourPicker" Margin="5"/>
 
-        <TextBlock Grid.Row="2" Text="End Hour:" VerticalAlignment="Center"/>
-        <TimePicker Grid.Row="2" Grid.Column="1" x:Name="EndHourPicker" Margin="5"/>
+        <TextBlock Text="End Hour:" VerticalAlignment="Center"/>
+        <TimePicker x:Name="EndHourPicker" Margin="5"/>
 
-        <TextBlock Grid.Row="3" Text="Note:" VerticalAlignment="Center"/>
-        <TextBox Grid.Row="3" Grid.Column="1" x:Name="NoteTextBox" Margin="5"/>
-		
-
-        <!-- Autres champs requis pour l'inscription -->
+        <TextBlock Text="Note:" VerticalAlignment="Center"/>
+        <TextBox x:Name="NoteTextBox" Margin="5"/>
 
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
             <Button Content="Inscrire" Width="100" Click="SaveButton_Click" Margin="0,10" HorizontalContentAlignment="Center"/>

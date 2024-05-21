@@ -3,10 +3,11 @@ using Avalonia;
 using Avalonia.Controls;
 using Avalonia.Interactivity;
 using Avalonia.Markup.Xaml;
+using MsBox.Avalonia;
+using MsBox.Avalonia.Enums;
 using RESAPPLI_MVVM.TestModels;
 using RESAPPLI_MVVM.Services;
 using Splat;
-
 namespace RESAPPLI_MVVM.Views
 {
     public partial class CreateReservationWindow : Window
@@ -26,31 +27,45 @@ namespace RESAPPLI_MVVM.Views
             Close();
         }
 
-        private void SaveButton_Click(object sender, RoutedEventArgs e)
+        private async void SaveButton_Click(object sender, RoutedEventArgs e)
         {
+            Console.WriteLine("Saving reservation...");
             var db = Locator.Current.GetService<iReservationService>();
 
             // Convert DateTimeOffset to DateTime for DateReservation
-            DateTime dateReservation = DayPicker.SelectedDate?.DateTime ?? DateTime.Today;
+            var selectedDate = this.FindControl<DatePicker>("DayPicker").SelectedDate?.DateTime ?? DateTime.Today;
 
             // Convert TimeSpan to TimeOnly for HeureDebut and HeureFin
-            TimeSpan heureDebut = StartHourPicker.SelectedTime ?? TimeSpan.Zero;
-            TimeSpan heureFin = EndHourPicker.SelectedTime ?? TimeSpan.Zero;
+            var selectedStartTime = this.FindControl<TimePicker>("StartHourPicker").SelectedTime ?? TimeSpan.Zero;
+            var selectedEndTime = this.FindControl<TimePicker>("EndHourPicker").SelectedTime ?? TimeSpan.Zero;
+
+            // Ensure the start time is before the end time
+            if (selectedStartTime >= selectedEndTime)
+            {
+                
+                
+                var box = MessageBoxManager
+                    .GetMessageBoxStandard("Intervalle invalide", "Start time must be before end time.");
+
+                var result = await box.ShowAsync();
+                return;
+            }
 
             // Create a new reservation object with the input data
             var reservation = new Reservation
             {
-                DateReservation = new DateOnly(dateReservation.Year, dateReservation.Month, dateReservation.Day),
-                HeureDebut = new TimeOnly(heureDebut.Hours, heureDebut.Minutes),
-                HeureFin = new TimeOnly(heureFin.Hours, heureFin.Minutes),
-                Note = NoteTextBox.Text
+                DateReservation = DateOnly.FromDateTime(selectedDate),
+                HeureDebut = TimeOnly.FromTimeSpan(selectedStartTime),
+                HeureFin = TimeOnly.FromTimeSpan(selectedEndTime),
+                Note = this.FindControl<TextBox>("NoteTextBox").Text,
+                IdPlanning = 1, // Assuming a default value
+                IdCategorie = 1 // Assuming a default value
             };
 
-            // Add the reservation to the database using the service
             db.AddReservation(reservation);
 
-            // Close the window
-            Close();
+            Console.WriteLine("Reservation saved.");
+            this.Close();
         }
     }
 }
